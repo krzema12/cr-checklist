@@ -35,3 +35,25 @@
 * Does the customer know how to report issues with this change?
 
 # How (architectural aspects)
+
+1. Are troubleshooting facilitators in place?
+* Is there proper logging?
+* Are relevant IDs (request IDs, order IDs) exposed to the customer wherever needed?
+* Is any sensitive data logged?
+
+2. Is the change structured properly?
+* Are there any unrelated changes (formatting changes, fixing something "while being there")
+* Are commits small enough to be understood easily?
+* Are there any refactorings that could be separate commits?
+
+3. In case of bugs, are there regression detection mechanisms in place?
+* Is there a test that would break before fixing the issue?
+* Are the tests good enough to detect accidental changes in code (mutation testing)?
+
+4. Is the code clean?
+* Does it read like an article (from general description, down to details)?
+* Does it contain logic that is easy to understand, or is it documented otherwise?
+
+5. Is performance optimal or at least known?
+* Has the change been tested for bigger amount of data?
+* How does it scale in terms of data growth?
