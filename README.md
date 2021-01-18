@@ -36,6 +36,10 @@
 
 # How (architectural aspects)
 
+(Raw notes, TODO: clean up)
+* does this change reinvent the wheel (reimplement something)? Can some code be taken from a
+  generic place, to maintain consistency with how it works in other places?
+
 1. Are troubleshooting facilitators in place?
 * Is there proper logging?
 * Are relevant IDs (request IDs, order IDs) exposed to the customer wherever needed?
