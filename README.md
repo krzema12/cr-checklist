@@ -38,7 +38,9 @@
 
 (Raw notes, TODO: clean up)
 * does this change reinvent the wheel (reimplement something)? Can some code be taken from a
-  generic place, to maintain consistency with how it works in other places?
+  generic place, to maintain consistency with how it works in other places? Example: there was
+  filtering in some part of the system, custom-made, but only partially. It used some library
+  functions, but some things were done in a custom way. It led to a bug
 
 1. Are troubleshooting facilitators in place?
 * Is there proper logging?
